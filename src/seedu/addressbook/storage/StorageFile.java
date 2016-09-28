@@ -27,12 +27,6 @@ public class StorageFile {
     /**
      * Signals that the given file path does not fulfill the storage filepath constraints.
      */
-    public static class InvalidStorageFilePathException extends IllegalValueException {
-        public InvalidStorageFilePathException(String message) {
-            super(message);
-        }
-    }
-
   
 
     private final JAXBContext jaxbContext;
@@ -136,8 +130,8 @@ public class StorageFile {
         }
     }
 
-    public String getPath() {
-        return getPath();
+    public String getFilePath() {
+        return getFilePath();
     }
 
     public Storage initialize() throws InvalidStorageFilePathException {
